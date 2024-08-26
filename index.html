@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="coins.png">
+    <title>Exchange</title>
+    <style>
+        body{
+            background-color: #000000; }
+
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .tradingview-widget-container {
+                height: 100%;
+                width: 100%;
+            }
+            .tradingview-widget-container__widget {
+                height: calc(100% - 32px); /* Subtract the height of the copyright bar */
+                width: 100%;
+            }
+        } </style>
+</head>
+<body>
+
+    <!-- TradingView marquee BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500 Index"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "US 100 Cash CFD"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR to USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "Bitcoin"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "Ethereum"
+      },
+      {
+        "description": "JP-Morgan&Chase",
+        "proName": "NYSE:JPM"
+      },
+      {
+        "description": "GOOGLE",
+        "proName": "NASDAQ:GOOGL"
+      },
+      {
+        "description": "GOLD",
+        "proName": "TVC:GOLD"
+      },
+      {
+        "description": "HSBC",
+        "proName": "NYSE:HSBC"
+      },
+      {
+        "description": "Facebook",
+        "proName": "NASDAQ:META"
+      },
+      {
+        "description": "Amazon",
+        "proName": "NASDAQ:AMZN"
+      },
+      {
+        "description": "NVIDIA",
+        "proName": "NASDAQ:NVDA"
+      }
+    ],
+    "showSymbolLogo": true,
+    "isTransparent": true,
+    "displayMode": "adaptive",
+    "colorTheme": "dark",
+    "locale": "en"
+  }
+    </script>
+
+
+  </div>
+  <!-- TradingView marquee  END -->
+
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright">
+        <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
+            <span class="blue-text">Track all markets on TradingView</span>
+        </a>
+    </div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+    {
+        "autosize": true,
+        "symbol": "NASDAQ:AAPL",
+        "timezone": "Etc/UTC",
+        "theme": "dark",
+        "style": "1",
+        "locale": "en",
+        "withdateranges": true,
+        "range": "1D",
+        "hide_side_toolbar": false,
+        "allow_symbol_change": true,
+        "watchlist": [
+            "NASDAQ:NVDA",
+            "NASDAQ:AMZN",
+            "NASDAQ:META",
+            "NYSE:HSBC",
+            "TVC:GOLD",
+            "SP:SPX"
+        ],
+        "details": true,
+        "hotlist": true,
+        "calendar": false,
+        "studies": [
+            "STD;24h%Volume"
+        ],
+        "support_host": "https://www.tradingview.com"
+    }
+    </script>
+</div>
+
+  
+</body>
+</html>
